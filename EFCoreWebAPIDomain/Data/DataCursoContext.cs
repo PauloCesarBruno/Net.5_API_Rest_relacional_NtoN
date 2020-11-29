@@ -22,5 +22,11 @@ namespace EFCoreWebAPI.EFCoreWebAPIDomain.Data
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-PPP09CP;Database=Curso;User ID=sa;Password=Paradoxo22");
         }
-    }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Aluno>()
+                .HasKey(c => new { c.AlunoId });
+        }
+
+    }             
 }
