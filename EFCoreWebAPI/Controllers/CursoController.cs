@@ -18,7 +18,7 @@ namespace EFCoreWebAPI.Controllers
             _repo = repo;
         }
 
-        // Get api/CursoController
+        //Get api/CursoController
         [HttpGet]
         public async Task<IActionResult> GetCursos()
         {
@@ -33,7 +33,7 @@ namespace EFCoreWebAPI.Controllers
             }
         }
 
-        // Get api/CursoController/5
+        //Get api/CursoController/5
         [HttpGet("{CursoId}")]
         public async Task<IActionResult> GetCursoId(int CursoId)
         {
@@ -48,7 +48,7 @@ namespace EFCoreWebAPI.Controllers
             }
         }
 
-        // POST api/CursoController
+        //POST api/CursoController
         [HttpPost]
         public async Task<IActionResult> Post(Curso model)
         {
@@ -67,7 +67,7 @@ namespace EFCoreWebAPI.Controllers
             return BadRequest();
         }
 
-        // PUT api/CursoController/5
+        //PUT api/CursoController/5
         [HttpPut("{CursoId}")]
         public async Task<IActionResult> Put(int CursoId, Curso model)
         {
@@ -90,7 +90,7 @@ namespace EFCoreWebAPI.Controllers
             return BadRequest();
         }
 
-        // DELETE api/CursoController/5
+        //DELETE api/CursoController/5
         [HttpDelete("{CursoId}")]
         public async Task<IActionResult> Delete(int CursoId)
         {
