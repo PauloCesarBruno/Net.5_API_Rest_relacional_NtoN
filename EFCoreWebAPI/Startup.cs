@@ -32,7 +32,7 @@ namespace EFCoreWebAPI
             );
 
             services.AddDbContext<DataCursoContext>(options =>
-            options.UseSqlServer("Server=DESKTOP-EJP79KA;Database=Curso;User ID=sa;Password=Paradoxo22"));
+            options.UseSqlServer("Server=HOME;Database=Curso;User ID=sa;Password=Paradoxo22"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EFCoreWebAPI", Version = "v1" });

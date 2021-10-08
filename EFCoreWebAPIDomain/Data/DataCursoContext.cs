@@ -16,7 +16,7 @@ namespace EFCoreWebAPI.EFCoreWebAPIDomain.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-EJP79KA;Database=Curso;User ID=sa;Password=Paradoxo22");
+            optionsBuilder.UseSqlServer("Server=HOME;Database=Curso;User ID=sa;Password=Paradoxo22");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
