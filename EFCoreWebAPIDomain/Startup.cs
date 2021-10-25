@@ -22,8 +22,7 @@ namespace EFCoreWebAPIDomain
         {
 
             services.AddControllers();
-            services.AddDbContext<DataCursoContext>(options =>
-            options.UseSqlServer("DataCursoContext"));
+            services.AddDbContext<DataCursoContext>(opt => opt.UseSqlServer("DataCursoContext"));
 
         }
 
