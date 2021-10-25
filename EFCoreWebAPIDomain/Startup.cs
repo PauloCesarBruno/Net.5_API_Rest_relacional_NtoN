@@ -23,7 +23,7 @@ namespace EFCoreWebAPIDomain
 
             services.AddControllers();
             services.AddDbContext<DataCursoContext>(options =>
-            options.UseSqlServer("Server=HOME;Database=Curso;User ID=sa;Password=Paradoxo22"));
+            options.UseSqlServer("DataCursoContext"));
 
         }
 

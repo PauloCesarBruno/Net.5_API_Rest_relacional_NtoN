@@ -42,6 +42,7 @@ namespace EFCoreWebAPI.Controllers
             try
             {
                 var results = await _repo.GetAlunoId(AlunoId);
+                if (results == null) return NotFound("Aluno não encontrado !");
                 return Ok(results);
             }
             catch (Exception ex)
@@ -99,13 +100,13 @@ namespace EFCoreWebAPI.Controllers
             try
             {
                 var results = await _repo.GetAlunoId(AlunoId);
-                if (results == null) return NotFound();
+                if (results == null) return NotFound("Aluno não encontrado!");
                 {
                     _repo.Delete(results);
 
                     if (await _repo.SaveChangesAsync())
                     {
-                        return Ok();
+                        return Ok("Aluno deletado com sucesso !");
                     }
                 }
             }
